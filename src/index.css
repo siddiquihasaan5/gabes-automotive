@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-midnight-navy: #0D1B2A;
+    --color-navy-dark: #08111A;
+    --color-navy-light: #162B3F;
+    --color-industrial-amber: #F59E0B;
+    --color-amber-hover: #E58D05;
+    --color-amber-muted: #D97706;
+    --color-warm-ivory: #F8F9FA;
+    --color-steel-gray: #5A6B7C;
+    --color-deep-charcoal: #151D24;
+    --color-border-gray: #E2E8F0;
+    --color-pure-white: #FFFFFF;
+  }
+
+  html {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #F8F9FA;
+    color: #151D24;
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Barlow Condensed', -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: 0.025em;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Accessible focus rings */
+  :focus-visible {
+    outline: 2px solid #F59E0B;
+    outline-offset: 3px;
+  }
+}
+
+/* Custom visual utilities for precision industrial aesthetic */
+.bg-midnight-navy { background-color: #0D1B2A; }
+.bg-navy-dark { background-color: #08111A; }
+.bg-navy-light { background-color: #162B3F; }
+
+.text-midnight-navy { color: #0D1B2A; }
+.text-industrial-amber { color: #F59E0B; }
+.text-amber-muted { color: #D97706; }
+
+.bg-industrial-amber { background-color: #F59E0B; }
+.border-industrial-amber { border-color: #F59E0B; }
+
+.bg-warm-ivory { background-color: #F8F9FA; }
+.text-warm-ivory { color: #F8F9FA; }
+
+.bg-steel-gray { background-color: #5A6B7C; }
+.text-steel-gray { color: #5A6B7C; }
+
+.bg-deep-charcoal { background-color: #151D24; }
+.text-deep-charcoal { color: #151D24; }
+
+.border-border-gray { border-color: #E2E8F0; }
+
+/* Subtle industrial grid pattern */
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(245, 158, 11, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-dark-grid {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}

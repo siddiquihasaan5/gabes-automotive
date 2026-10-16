@@ -1,0 +1,6 @@
+{
+  "name": "Gabe's Automotive & Transmission",
+  "description": "Professional automotive repair, transmission, engine, and mechanical maintenance in Belton, Texas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

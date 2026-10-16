@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GABE'S AUTOMOTIVE & TRANSMISSION | Belton, TX</title>
+    <meta
+      name="description"
+      content="Automotive repair, transmission services, engine work, brake service, and mechanical maintenance in Belton, Texas."
+    />
+    <meta property="og:title" content="GABE'S AUTOMOTIVE & TRANSMISSION | Belton, TX" />
+    <meta
+      property="og:description"
+      content="Automotive repair, transmission services, engine work, brake service, and mechanical maintenance in Belton, Texas."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GABE'S AUTOMOTIVE & TRANSMISSION" />
+    <meta property="og:image" content="/images/engine-ac-diagnostics.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GABE'S AUTOMOTIVE & TRANSMISSION | Belton, TX" />
+    <meta
+      name="twitter:description"
+      content="Automotive repair, transmission services, engine work, brake service, and mechanical maintenance in Belton, Texas."
+    />
+    <meta name="twitter:image" content="/images/engine-ac-diagnostics.jpg" />
+    <link rel="icon" type="image/jpeg" href="/images/gabes-logo.jpg" />
+
+    <!-- Google Fonts: Barlow Condensed & DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Structured Data (JSON-LD) - strictly no telephone property -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "GABE'S AUTOMOTIVE & TRANSMISSION",
+      "description": "Automotive repair, transmission services, engine repair, air conditioning, and mechanical maintenance for light-duty vehicles.",
+      "email": "gabe@gabesautotx.com",
+      "logo": "/images/gabes-logo.jpg",
+      "image": [
+        "/images/engine-ac-diagnostics.jpg",
+        "/images/ase-certified.jpg"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "6971 W US Highway 190",
+        "addressLocality": "Belton",
+        "addressRegion": "TX",
+        "postalCode": "76513",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "17:00"
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-[#F8F9FA] text-[#151D24] antialiased min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
